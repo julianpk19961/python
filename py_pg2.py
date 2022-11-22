@@ -7,13 +7,13 @@
 #   print (“cadena con formato” % (variables separadas por comas))
 
 # Se utilizan los siguientes formatos para la salida de datos:
-    # %c = un caracter
-    # %s = str, cadena de caracteres
-    # %d = int, enteros
-    # %f = float, flotantes 
-    #       -> para imprimir con un tamaño exacto de decimales es %.nf donde n es el número de decimales
+# %c = un caracter
+# %s = str, cadena de caracteres
+# %d = int, enteros
+# %f = float, flotantes
+#       -> para imprimir con un tamaño exacto de decimales es %.nf donde n es el número de decimales
 
-#Ejemplo
+# Ejemplo
 
 titulo = "Programa número 3"
 dia = 16
@@ -22,4 +22,5 @@ anio = 2022
 tmp = 6.3
 pi = 3.1416
 
-print ('Bienvenido al: %s hoy es: %d / %d / %d y estamos a %.2f °C - \n el valor de π = %f' % (titulo , dia,mes,anio,tmp,pi) )
+print('Bienvenido al: %s hoy es: %d / %d / %d y estamos a %.2f °C - \n el valor de π = %f' %
+      (titulo, dia, mes, anio, tmp, pi))
