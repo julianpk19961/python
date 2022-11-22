@@ -1,4 +1,4 @@
-#Introducción
+# Introducción
 
 # Dialogo para interactuar con el usuario.
 print("Hola, este es el curso de 'Variables y estructuras de control en python'")

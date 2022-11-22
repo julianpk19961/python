@@ -1,0 +1,10 @@
+# bool()
+# Evalua si un elemento es true o false
+print('bool()-> Evalua si un elemento es True o False')
+print('bool(0) =', bool(0))
+print('bool(0.0) =', bool(0.0))
+print('bool("") =', bool(""))
+print('bool(5) =', bool(5))
+print('bool(5.5) =', bool(5.5))
+print('bool("Cinco") =', bool('Cinco'))
+print('------')
