@@ -1,0 +1,27 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "tutorial de npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianpk19961/python.git"
+  },
+  "keywords": [
+    "npm",
+    "tutorial"
+  ],
+  "author": "julian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianpk19961/python/issues"
+  },
+  "homepage": "https://github.com/julianpk19961/python#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "vue": "^3.2.45"
+  }
+}
