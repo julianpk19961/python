@@ -1,4 +1,4 @@
-# TALLER PYTHON - N°1
+# TALLER PYTHON - N°2
 # Autor: Julián Rodriguez
 # Fecha: Nov-29-2022
 
