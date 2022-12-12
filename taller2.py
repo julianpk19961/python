@@ -29,12 +29,13 @@ else:
 print('El número mayor es %s: ' % (mayor) if len(mayor) == 1 else mayor)
 print("\n---------------------------------\n")
 
-materias = ['BackEnd', 'FrontEnd','Data scientist', 'Data Analys', 'FullStack', 'Diseño Gráfico']
+materias = ['BackEnd', 'FrontEnd', 'Data scientist',
+            'Data Analys', 'FullStack', 'Diseño Gráfico']
 
 print(
     "A continuación podrá ver el listado de opciones disponibles para estudiar:\n")
 
-#Se que no va en este módulo, pero me pareció interesante probar.
+# Se que no va en este módulo, pero me pareció interesante probar.
 for materia in materias:
     print('Escriba: [%d] si desea estudiar: %s' % (i, materia))
     i += 1
