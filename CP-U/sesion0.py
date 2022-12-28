@@ -1,2 +1,2 @@
-#Impresión mensaje
+# Impresión mensaje
 print('Hello World')
