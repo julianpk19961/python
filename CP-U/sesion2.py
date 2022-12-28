@@ -1,4 +1,4 @@
-# TIPOS DE DintTO
+# TIPOS DE DATOS 
 
 # NUMERICO
 int = 100
