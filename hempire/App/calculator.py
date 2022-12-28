@@ -37,6 +37,7 @@ pots = [
     {'id': 1, 'name': 'magic', 'timeAceleration': 0.5}
 ]
 
+# https://hempire.fandom.com/
 
 print(categories, end='\n')
 print(strains, end='\n')
