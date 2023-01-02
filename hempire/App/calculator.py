@@ -39,7 +39,21 @@ pots = [
 
 # https://hempire.fandom.com/
 
-print(categories, end='\n')
-print(strains, end='\n')
-print(strainMaestries, end='\n')
-print(pots)
+print('Categorias')
+for category in categories:
+    print('\t %d->%s' % (category['id'], category['name']))
+print()
+print('Cepas')
+for strain in strains:
+    print('\tCepa: {0}cls\tCategoria:{1}'.format(
+        strain['name'], strain['category']))
+print()
+print('Niveles de maestria para cepas disponibles:')
+for mastery in strainMaestries:
+    print('\tNivel: {0}'.format(mastery['level'], end='\t'))
+
+print()
+print('Tipos de macetas:')
+for pot in pots:
+    print('\tTipo: {0}\tReducion de tiempo: {1}%'.format(
+        pot['name'], int(pot['timeAceleration']*100)))

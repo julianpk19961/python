@@ -2,6 +2,7 @@
 
 import random
 
+CRUD = ['Salir', 'Crear', 'Leer', 'Actualizar', 'Elementar']
 ans = ['NO', 'SI']
 types = ['Bicho', 'Dragón', 'Eléctrico', 'Hada', 'Lucha', 'Fuego', 'Volador', 'Fantasma',
          'Planta', 'Tierra', 'Hielo', 'Normal', 'Veneno', 'Psíquico', 'Roca', 'Acero', 'Agua']
@@ -10,12 +11,32 @@ randomValue = random.randint(0, len(types))
 print('Felicidades, ha obtenido el tipo: %s' % (types[randomValue]))
 # range()
 
-print('Para eliminar un tipo de pokemon escriba:')
 i = 0
 for tipo in types:
     print('{0} - {1}'.format(i, tipo))
     i += 1
 print()
+
+i = 0
+for option in CRUD:
+    print('{0} - {1}'.format(i, option))
+    i += 1
+
+while True:
+    choiceCrud = input('Ingrese la opción que desea realizar: ')
+
+    try:
+        choiceCrud = int(choiceCrud)
+        if choiceCrud >= 0 and choiceCrud <= len(CRUD):
+            if (choiceCrud > 0):
+                break
+            else:
+                exit()
+
+    except ValueError:
+        print('Opción invalida')
+
+print('\nPara {0} un tipo de pokemon escriba: '.format(CRUD[choiceCrud]))
 
 exit = ''
 delChoice = ''
