@@ -109,7 +109,12 @@ for pot in pots:
 
 
 strains_bk = strains.copy()
-print('My Strains count: %s' % len(myStrains))
+print('My Strains count: %s' % len(strains_bk))
 
+myStrain = []
 
-print(myStrains)
+for item in strains_bk:
+    item.update({'count': 0})
+    myStrain.append(item)
+
+print(myStrain)
