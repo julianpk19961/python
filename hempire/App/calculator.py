@@ -34,8 +34,19 @@ pots = [
     {'id': 1, 'name': 'magic', 'timeAceleration': 0.5}
 ]
 
-# https://hempire.fandom.com/
 
+def recorreDictionary(dictionary=''):
+    if dictionary == '' or type(dictionary) == 'str':
+        print('Diccionario vacio')
+        return False
+
+    print('\nEJECUTADO DESDE UNA FUNCIÓN\n')
+    for row in dictionary:
+        print('Id: %s\tName: %s' % (row['id'], row['name']))
+    return 'We did it'
+
+
+# https://hempire.fandom.com/
 print('Categorias')
 for category in categories:
     print('\t %d->%s' % (category['id'], category['name']))
@@ -114,7 +125,20 @@ print('My Strains count: %s' % len(strains_bk))
 myStrain = []
 
 for item in strains_bk:
+    if len(item) == 0:
+        continue
+
     item.update({'count': 0})
     myStrain.append(item)
 
-print(myStrain)
+# Call function whit params
+# recorreDictionary(myStrain)
+
+# Call function whit params whitout params when call
+# recorreDictionary()
+
+# whit return
+x = recorreDictionary(myStrain)
+print('RESULT:\t', x.upper())
+# Sin retorno
+recorreDictionary(myStrain)
