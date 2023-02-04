@@ -1,6 +1,5 @@
 # Variables in Python
 
-
 # How do create a variable and store some data in python?
 # Here are the steps we might need to follow.
 
